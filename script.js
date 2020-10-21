@@ -5,9 +5,10 @@ var row1 = document.createElement('div');
 row1.setAttribute('class', 'row');
 var empty_col = document.createElement('div');
 empty_col.setAttribute('class', 'col-sm-12');
+empty_col.innerHTML = 'Calculator';
 
 var row2 = document.createElement('div');
-row2.setAttribute('class', 'row');
+row2.setAttribute('class', 'row text-center');
 var col_1 = document.createElement('div');
 col_1.setAttribute('class', 'col-sm-3 col-md-3 col-lg-3');
 var col_2 = document.createElement('div');
@@ -28,9 +29,59 @@ input_field.id = 'input-value';
 
 var row_two = document.createElement('tr');
 var data_2 = document.createElement('td');
+data_2.innerHTML = '1';
+data_2.setAttribute('onclick', 'display("1")');
 var data_3 = document.createElement('td');
+data_3.innerHTML = '2';
+data_3.setAttribute('onclick', 'display("2")');
 var data_4 = document.createElement('td');
+data_4.innerHTML = '3';
+data_4.setAttribute('onclick', 'display("3")');
 var data_5 = document.createElement('td');
+data_5.innerHTML = '+';
+data_5.setAttribute('onclick', 'display("+")');
+
+var row_three = document.createElement('tr');
+var data_6 = document.createElement('td');
+data_6.innerHTML = '4';
+data_6.setAttribute('onclick', 'display("4")');
+var data_7 = document.createElement('td');
+data_7.innerHTML = '5';
+data_7.setAttribute('onclick', 'display("5")');
+var data_8 = document.createElement('td');
+data_8.innerHTML = '6';
+data_8.setAttribute('onclick', 'display("6")');
+var data_9 = document.createElement('td');
+data_9.innerHTML = '-';
+data_9.setAttribute('onclick', 'display("-")');
+
+var row_four = document.createElement('tr');
+var data_10 = document.createElement('td');
+data_10.innerHTML = '7';
+data_10.setAttribute('onclick', 'display("7")');
+var data_11 = document.createElement('td');
+data_11.innerHTML = '8';
+data_11.setAttribute('onclick', 'display("8")');
+var data_12 = document.createElement('td');
+data_12.innerHTML = '9';
+data_12.setAttribute('onclick', 'display("9")');
+var data_13 = document.createElement('td');
+data_13.innerHTML = '*';
+data_13.setAttribute('onclick', 'display("*")');
+
+var row_five = document.createElement('tr');
+var data_14 = document.createElement('td');
+data_14.innerHTML = 'c';
+data_14.setAttribute('onclick', 'display("c")');
+var data_15 = document.createElement('td');
+data_15.innerHTML = '0';
+data_15.setAttribute('onclick', 'display("0")');
+var data_16 = document.createElement('td');
+data_16.innerHTML = '=';
+data_16.setAttribute('onclick', 'display("=")');
+var data_17 = document.createElement('td');
+data_17.innerHTML = '/';
+data_17.setAttribute('onclick', 'display("/")');
 
 
 
@@ -45,7 +96,6 @@ row_two.append(data_2, data_3, data_4, data_5);
 row_three.append(data_6, data_7, data_8, data_9);
 row_four.append(data_10, data_11, data_12, data_13);
 row_five.append(data_14, data_15, data_16, data_17);
-
 table.append(row_one, row_two, row_three, row_four, row_five);
 col_2.append(table);
 row1.append(empty_col);
