@@ -1,3 +1,7 @@
+function clear() {
+    document.getElementById('input-value').value = "";
+}
+
 var container = document.createElement('div');
 container.setAttribute('class', 'container');
 
@@ -72,17 +76,16 @@ data_13.setAttribute('onclick', 'display("*")');
 var row_five = document.createElement('tr');
 var data_14 = document.createElement('td');
 data_14.innerHTML = 'c';
-data_14.setAttribute('onclick', 'display("c")');
+data_14.setAttribute('onclick', 'clear()');
 var data_15 = document.createElement('td');
 data_15.innerHTML = '0';
 data_15.setAttribute('onclick', 'display("0")');
 var data_16 = document.createElement('td');
 data_16.innerHTML = '=';
-data_16.setAttribute('onclick', 'display("=")');
+data_16.setAttribute('onclick', 'showResult()');
 var data_17 = document.createElement('td');
 data_17.innerHTML = '/';
 data_17.setAttribute('onclick', 'display("/")');
-
 
 
 
