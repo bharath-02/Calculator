@@ -2,6 +2,16 @@ function clear() {
     document.getElementById('input-value').value = "";
 }
 
+function display(val) {
+    document.getElementById('input-value').value += val;
+}
+
+function showResult() {
+    let a = document.getElementById('input-value').value;
+    let result = eval(a);
+    document.getElementById('input-value').value = result;
+}
+
 var container = document.createElement('div');
 container.setAttribute('class', 'container');
 
@@ -9,7 +19,9 @@ var row1 = document.createElement('div');
 row1.setAttribute('class', 'row');
 var empty_col = document.createElement('div');
 empty_col.setAttribute('class', 'col-sm-12');
-empty_col.innerHTML = 'Calculator';
+var h1 = document.createElement('h1');
+h1.innerHTML = 'Calculator';
+h1.setAttribute('class', 'text-center mt-5 mb-5');
 
 var row2 = document.createElement('div');
 row2.setAttribute('class', 'row text-center');
@@ -21,7 +33,7 @@ var col_3 = document.createElement('div');
 col_3.setAttribute('class', 'col-sm-3 col-md-3 col-lg-3');
 
 var table = document.createElement('table');
-table.setAttribute('class', 'table table-bordered');
+table.setAttribute('class', 'table table-bordered table-dark');
 
 var row_one = document.createElement('tr');
 var data_1 = document.createElement('td');
@@ -101,6 +113,7 @@ row_four.append(data_10, data_11, data_12, data_13);
 row_five.append(data_14, data_15, data_16, data_17);
 table.append(row_one, row_two, row_three, row_four, row_five);
 col_2.append(table);
+empty_col.append(h1);
 row1.append(empty_col);
 row2.append(col_1, col_2, col_3);
 container.append(row1, row2);
