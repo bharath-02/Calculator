@@ -41,7 +41,12 @@ var data_5 = document.createElement('td');
 
 data_1.append(input_field);
 row_one.append(data_1);
-table.append(row_one);
+row_two.append(data_2, data_3, data_4, data_5);
+row_three.append(data_6, data_7, data_8, data_9);
+row_four.append(data_10, data_11, data_12, data_13);
+row_five.append(data_14, data_15, data_16, data_17);
+
+table.append(row_one, row_two, row_three, row_four, row_five);
 col_2.append(table);
 row1.append(empty_col);
 row2.append(col_1, col_2, col_3);
