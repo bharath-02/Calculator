@@ -1,6 +1,6 @@
-function clear() {
-    document.getElementById('input-value').value = "";
-}
+// function clear() {
+//     document.getElementById('input-value').value = "";
+// }
 
 function display(val) {
     document.getElementById('input-value').value += val;
@@ -88,7 +88,9 @@ data_13.setAttribute('onclick', 'display("*")');
 var row_five = document.createElement('tr');
 var data_14 = document.createElement('td');
 data_14.innerHTML = 'C';
-data_14.setAttribute('onclick', 'clear()');
+data_14.addEventListener('click', function() {
+    document.getElementById('input-value').value = '';
+});
 var data_15 = document.createElement('td');
 data_15.innerHTML = '0';
 data_15.setAttribute('onclick', 'display("0")');
