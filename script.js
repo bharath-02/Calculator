@@ -26,11 +26,11 @@ h1.setAttribute('class', 'text-center mt-5 mb-5');
 var row2 = document.createElement('div');
 row2.setAttribute('class', 'row text-center');
 var col_1 = document.createElement('div');
-col_1.setAttribute('class', 'col-sm-3 col-md-3 col-lg-3');
+col_1.setAttribute('class', 'col-sm-12 col-md-3 col-lg-3');
 var col_2 = document.createElement('div');
-col_2.setAttribute('class', 'col-sm-6 col-md-6 col-lg-6');
+col_2.setAttribute('class', 'col-sm-12 col-md-6 col-lg-6');
 var col_3 = document.createElement('div');
-col_3.setAttribute('class', 'col-sm-3 col-md-3 col-lg-3');
+col_3.setAttribute('class', 'col-sm-12 col-md-3 col-lg-3');
 
 var table = document.createElement('table');
 table.setAttribute('class', 'table table-bordered table-dark');
@@ -41,7 +41,7 @@ data_1.setAttribute('colspan', '4');
 var input_field = document.createElement('input');
 input_field.setAttribute('type', 'text');
 input_field.setAttribute('class', 'form-control');
-input_field.id = 'input-value';
+input_field.setAttribute('id', 'input-value')
 
 var row_two = document.createElement('tr');
 var data_2 = document.createElement('td');
@@ -87,7 +87,7 @@ data_13.setAttribute('onclick', 'display("*")');
 
 var row_five = document.createElement('tr');
 var data_14 = document.createElement('td');
-data_14.innerHTML = 'c';
+data_14.innerHTML = 'C';
 data_14.setAttribute('onclick', 'clear()');
 var data_15 = document.createElement('td');
 data_15.innerHTML = '0';
